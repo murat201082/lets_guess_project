@@ -24,7 +24,7 @@ subm.addEventListener("click", (e) => {
       window.location.reload(true);
     }, 5000);
     setTimeout(() => {
-      guess.innerText = "you can try again".toUpperCase();
+      guess.innerText = "you can play again".toUpperCase();
     }, 3000);
   } else if (sect1.value > 100) {
     guess.innerText = "CHOOSE BETWEEN 1-100 NUMBERS!!";
