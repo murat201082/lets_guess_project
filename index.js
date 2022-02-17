@@ -14,7 +14,10 @@ let rand = Math.ceil(Math.random() * 100);
 let count = 0;
 subm.addEventListener("click", (e) => {
   count++;
-  foot2.innerText = `Number of Attempts: ${count}`;
+  foot2.innerText = `Number of Attempts: ${count} and you have ${7 - count} right`;
+  if(count == 7){
+window.location.reload(true);
+  }
   console.log(rand);
   e.preventDefault();
 
